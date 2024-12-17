@@ -1,0 +1,126 @@
+
+<!--https://stackoverflow.com/questions/14686883/splitting-html-page-so-printer-splits-it-into-separate-pages
+fill, and print to pdf from browser, set page to portrait A4 when printing/saving
+Press tab to go to first fillable field
+you can also save as html from firefox
+
+body, input { 
+  font-family: 'Times New Roman';/*'Helvetica', Arial, Lucida Grande, sans-serif; /*
+  /*font-size: 14px;    if that’s what you want... */
+  line-height: 1.4;  /* somewhat excessive */
+  color: #333333;    /* if that’s what you want, but it reduces legibility */
+  background: white; /* always set background when you set color */
+    outline: none;
+    border: none;
+}
+body {
+  min-width: 1050px; /* if you really want this... */
+  min-height: 500px;
+}
+
+
+
+
+
+
+
+-->
+<meta charset="utf-8">
+<style> 
+@media print {.page-break  { display:block; page-break-before:always; }  }
+ 
+body, input, textarea, table  { 
+ font-family: 'Times New Roman';
+ font-size: 18px;
+
+}
+
+span 
+{
+    border: none // solid 1px black;
+
+
+}
+
+spanbox {
+    display: block;
+    float: left;
+    height: 100px;
+    width: 500px;
+}
+
+
+
+</style>
+
+
+
+
+<br>
+<center><h2>M A I N  T I T L E</h2></center>
+<br>
+Name, <span contenteditable="true"></span>
+date of birth <span contenteditable="true"></span>
+location <span contenteditable="true"></span>
+current address: <span contenteditable="true"></span>, 
+id: <span contenteditable="true"></span>
+issued on date: <span contenteditable="true"></span>
+by: <span contenteditable="true"></span>
+<br> 
+<br>
+<br>
+<center><h3>SMALLER TITLE</h3></center>
+<br>
+
+Another person:
+<span contenteditable="true"></span>
+born
+<span contenteditable="true"></span>,
+his/her id
+<span contenteditable="true"></span>, 
+here is some more text in a text box <br> 
+<spanbox contenteditable="true">
+
+
+
+
+
+</spanbox> 
+
+
+
+
+<br><br><br><br><br><br><br>
+This happened on date: <span contenteditable="true"></span>
+<br> 
+<br><br>
+In the city of: <span contenteditable="true"></span>, 
+dana: <span contenteditable="true"></span> 
+<br>
+<br><br><br><br>
+
+<table border=0>
+<tr><td width=75%></td>
+<td width=75%>
+My signature
+<br>
+<br>
+______________________
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+
+
+<!--multiline: <br>
+
+<div class="page-break"></div>
+
+second page
+-->
+
+
+

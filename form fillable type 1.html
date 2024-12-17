@@ -1,0 +1,92 @@
+<!--https://stackoverflow.com/questions/14686883/splitting-html-page-so-printer-splits-it-into-separate-pages
+fill, and print to pdf from browser, set page to portrait A4 when printing/saving
+Press tab to go to first fillable field
+you can also save as html from firefox
+
+body, input { 
+  font-family: 'Times New Roman';/*'Helvetica', Arial, Lucida Grande, sans-serif; /*
+  /*font-size: 14px;    if that’s what you want... */
+  line-height: 1.4;  /* somewhat excessive */
+  color: #333333;    /* if that’s what you want, but it reduces legibility */
+  background: white; /* always set background when you set color */
+    outline: none;
+    border: none;
+}
+body {
+  min-width: 1050px; /* if you really want this... */
+  min-height: 500px;
+}
+
+
+
+
+
+
+
+-->
+<meta charset="utf-8">
+<style> 
+@media print {.page-break  { display:block; page-break-before:always; }  }
+ 
+body, input, textarea, table  { 
+ font-family: 'Times New Roman';
+ font-size: 18px;
+
+}
+
+</style>
+
+<br>
+<center><h2>M A I N  T I T L E</h2></center>
+<br>
+Name, <input  type="text" name="name" value="(name, last name)" size=26> 
+date of birth <input type="text" name="dob" value="(date)">, 
+in <input type="text" name="location1" value="(location)">, 
+ <span contenteditable="true">(address)</span>, 
+ <input type="text" size=35 name="ad" value="(address)">, 
+id: <input type="text" name="id" value="(broj)"> 
+issued on day: <input type="text" name="isday" value="(date of issue)">, 
+by: <input type="text" name="police" size=28 value="(issued by)"><br> 
+<br><br>
+<center><h3>SMALLER TITLE</h3></center>
+<br>
+
+<input type="text" name="nameap" size=26 value="(name, last name)"> 
+iz 
+<input type="text" name="adop" size=23 value="(address)">, 
+<input type="text" name="idno" value="(ID number)">, 
+Some more text: <br> 
+<textarea name="todo" rows="4" cols="50"></textarea> 
+<br><br><br><br><br><br><br>
+valid till: <input type="text" name="validtill" value="(date)"><br> 
+<br><br>
+In <input type="text" name="location2" value="(location)">, 
+<input type="text" name="date3" value="(date)"> 
+<br>
+<br><br><br><br>
+
+<table border=0>
+<tr><td width=75%></td>
+<td width=75%>
+Signature:
+<br>
+<br>
+______________________
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<br>
+
+
+<!--multiline: <br>
+
+<div class="page-break"></div>
+
+second page
+-->
+
+
+
