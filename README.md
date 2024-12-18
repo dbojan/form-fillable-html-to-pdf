@@ -1,7 +1,7 @@
 # Form fillable, html, save to html or pdf
 Save html fillable forms as html, pdf, or print them
 
-There are different versions of this html file:
+There are different types of this html file:
 
 ## Type 3:
 
